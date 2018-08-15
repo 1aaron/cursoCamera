@@ -15,6 +15,8 @@
 		8BE80BB62123879100473F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE80BB42123879100473F0E /* LaunchScreen.storyboard */; };
 		8BE80BC12123879100473F0E /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE80BC02123879100473F0E /* PhotoAppTests.swift */; };
 		8BE80BCC2123879100473F0E /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE80BCB2123879100473F0E /* PhotoAppUITests.swift */; };
+		8BE80BDA2123A93400473F0E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE80BD92123A93400473F0E /* MainViewController.swift */; };
+		8BE80BDE2124947400473F0E /* extensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE80BDD2124947400473F0E /* extensionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8BE80BC72123879100473F0E /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE80BCB2123879100473F0E /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
 		8BE80BCD2123879100473F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE80BD92123A93400473F0E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8BE80BDD2124947400473F0E /* extensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,9 @@
 		8BE80BA72123879000473F0E /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8BE80BDC2124945500473F0E /* Extensions */,
+				8BE80BDB2123A98E00473F0E /* ViewControllers */,
 				8BE80BA82123879000473F0E /* AppDelegate.swift */,
-				8BE80BAA2123879000473F0E /* ViewController.swift */,
 				8BE80BAC2123879000473F0E /* Main.storyboard */,
 				8BE80BB22123879100473F0E /* Assets.xcassets */,
 				8BE80BB42123879100473F0E /* LaunchScreen.storyboard */,
@@ -126,6 +131,23 @@
 				8BE80BCD2123879100473F0E /* Info.plist */,
 			);
 			path = PhotoAppUITests;
+			sourceTree = "<group>";
+		};
+		8BE80BDB2123A98E00473F0E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BE80BAA2123879000473F0E /* ViewController.swift */,
+				8BE80BD92123A93400473F0E /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8BE80BDC2124945500473F0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8BE80BDD2124947400473F0E /* extensionVC.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +283,9 @@
 			files = (
 				8BE80BAB2123879000473F0E /* ViewController.swift in Sources */,
 				8BE80BA92123879000473F0E /* AppDelegate.swift in Sources */,
+				8BE80BDE2124947400473F0E /* extensionVC.swift in Sources */,
 				8BE80BB12123879000473F0E /* PhotoApp.xcdatamodeld in Sources */,
+				8BE80BDA2123A93400473F0E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -421,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -435,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZABLQ52QJ;
 				INFOPLIST_FILE = PhotoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZABLQ52QJ;
 				INFOPLIST_FILE = PhotoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
